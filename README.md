@@ -1,2 +1,57 @@
-# cpp-simple-password-Manager
-A beginner-friendly password manager built in C++. Users can save their website credentials into a local text file and view them by entering an admin password. Uses basic file I/O with stdio and OOP principles.
+🔐 Simple Password Manager (C++)
+A basic CLI-based password manager written in C++ for educational purposes. Users can store and retrieve website credentials using simple file I/O.
+
+⚠️ Disclaimer: This project is for learning purposes only. Passwords are stored in plain text and are not encrypted. Do not use this to store real passwords.
+
+
+📋 Features
+
+*Store website credentials (website, username, password) to a local text file
+*Retrieve stored credentials with an admin password
+*Simple menu-driven interface
+
+
+🚀 How to Use
+
+Compile the program:
+
+bash   g++ -o password_manager main.cpp
+
+Run it:
+
+bash   ./password_manager
+```
+3. Choose an option from the menu:
+   - `1` → Enter new credentials
+   - `2` → View saved credentials
+   - `3` → Exit
+
+---
+
+## 🔑 Admin Password
+
+The default admin password to view stored credentials is:
+```
+admin
+You can change it in the source code inside the password class:
+cppstring apassword = "admin";
+```
+
+---
+
+## 📁 Storage
+
+Credentials are saved in a local file called `password.txt` in the following format:
+```
+website username password
+
+🛠️ Requirements
+
+*C++ compiler (g++ recommended)
+*Standard C++ libraries
+
+
+📌 Notes
+
+*This is a beginner-level project built for practicing OOP and file I/O in C++
+*Not suitable for production use
